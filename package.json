@@ -1,0 +1,27 @@
+{
+  "name": "ghoodies",
+  "version": "1.0.0",
+  "description": "Simple Galvanize Hoodie Ordering System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanthissen/gHoodies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanthissen/gHoodies/issues"
+  },
+  "homepage": "https://github.com/ryanthissen/gHoodies#readme",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "express": "^4.15.0",
+    "fs": "0.0.1-security",
+    "knex": "^0.12.7",
+    "nodemon": "^1.11.0",
+    "pg": "^6.1.2"
+  }
+}
