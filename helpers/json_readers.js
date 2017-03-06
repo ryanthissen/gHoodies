@@ -1,25 +1,9 @@
+/*jshint esversion: 6 */
 
-$(document).ready(function() {
-  $('select').material_select();
-});
-
-$("#select-cohort").on('change', function() {
-    console.log('select changed');
-    const url = (`localhost:8000/cohort/:cohortid`);
-    fetchJson(url)
-      .then(result) => {
-        
-      }
-});
-
-
-const express = require('express');
-const app = express();
-const port = process.env.PORT || 8000;
+'use strict';
 
 const fs = require('fs');
-const path = require('path');
-
+const fsp = require('fs-promise');
 const students_path = path.join(__dirname, 'models/students.json');
 const student_path = path.join(__dirname, 'models/student.json');
 const cohorts_path = path.join(__dirname, 'models/cohorts.json');
